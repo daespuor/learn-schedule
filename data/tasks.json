@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Hard Parts UI",
+    "description": "Learn UI hard parts",
+    "status": "in-progress",
+    "teacher": "Will Sentance",
+    "topic": "js",
+    "instances": [
+      {
+        "date": "2023-08-12",
+        "startTime": "18:00",
+        "endTime": "20:00",
+        "duration": 2
+      },
+      {
+        "date": "2023-08-14",
+        "startTime": "18:00",
+        "endTime": "20:00",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Intro to React",
+    "description": "Learn React",
+    "status": "in-progress",
+    "teacher": "Brian Holt",
+    "topic": "react",
+    "instances": [
+      {
+        "date": "2023-08-12",
+        "startTime": "18:00",
+        "endTime": "20:00",
+        "duration": 2
+      },
+      {
+        "date": "2023-08-14",
+        "startTime": "18:00",
+        "endTime": "20:00",
+        "duration": 2
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Intro to CSS",
+    "description": "Learn CSS",
+    "status": "in-progress",
+    "teacher": "Jen Kramer",
+    "topic": "css",
+    "instances": [
+      {
+        "date": "2023-08-12",
+        "startTime": "18:00",
+        "endTime": "20:00",
+        "duration": 2
+      },
+      {
+        "date": "2023-08-14",
+        "startTime": "18:00",
+        "endTime": "20:00",
+        "duration": 2
+      }
+    ]
+  }
+]

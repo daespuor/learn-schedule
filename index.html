@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Learn Schedule</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="app.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="navlink">
+          <h1>
+            <img
+              src="/images/chalkboard-user-solid.svg"
+              alt="my learn Schedule"
+            />
+            <small>My Learn Schedule</small>
+          </h1>
+        </a>
+        <section class="navlinks">
+          <a class="navlink" href="/">Learn</a>
+          <a class="navlink" href="/topics">Topics</a>
+          <a class="navlink" href="/login">Login</a>
+        </section>
+      </nav>
+    </header>
+    <main></main>
+
+    <template id="task-page-template">
+      <section>
+        <h2>Tasks</h2>
+        <div class="task-instances"></div>
+        <button class="new-task-button"><img src="/images/plus.svg" /></button>
+      </section>
+    </template>
+
+    <template id="task-template">
+      <article class="instance">
+        <div class="instance-header">
+          <span class="instance-topic"></span>
+          <h3></h3>
+        </div>
+        <div class="instance-body">
+          <div class="instance-wrapper">
+            <p class="instance-dates"></p>
+            <p class="instance-teacher"></p>
+            <p class="instance-description"></p>
+          </div>
+          <span class="divider"> </span>
+        </div>
+      </article>
+    </template>
+
+    <template id="new-task-page-template">
+      <section>
+        <h2>New Task</h2>
+        <form>
+          <div class="form-field">
+            <label for="name">Name</label>
+            <input name="name" id="name" value="" />
+          </div>
+          <div class="form-field">
+            <label for="description">Description</label>
+            <input name="description" id="description" value="" />
+          </div>
+          <div class="form-field">
+            <label for="teacher">Teacher</label>
+            <input name="teacher" id="teacher" value="" />
+          </div>
+          <div class="form-field">
+            <label for="topic">Topic</label>
+            <select name="topic" id="topic">
+              <option value="">Select topic</option>
+              <option value="js">JavaScript</option>
+              <option value="react">React</option>
+              <option value="css">CSS</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="startTime">Start Date</label>
+            <input name="starTime" id="starTime" type="time" value="" />
+          </div>
+          <div class="form-field">
+            <label for="endTime">End Date</label>
+            <input name="endTime" id="endTime" type="time" value="" />
+          </div>
+          <fieldset class="new-task-days">
+            <legend>Which days?</legend>
+            <input name="days" type="checkbox" value="0" />Sun
+            <input name="days" type="checkbox" value="1" />Mon
+            <input name="days" type="checkbox" value="2" />Tue
+            <input name="days" type="checkbox" value="3" />Wed
+            <input name="days" type="checkbox" value="4" />Thu
+            <input name="days" type="checkbox" value="5" />Fri
+          </fieldset>
+          <div class="new-task-buttons">
+            <button type="submit">Save</button>
+            <button type="button">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </template>
+  </body>
+</html>

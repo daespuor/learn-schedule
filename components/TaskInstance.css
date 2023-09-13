@@ -1,0 +1,52 @@
+.instance {
+  margin: auto;
+  width: 90%;
+  font-size: 0.8rem;
+  border: 1px solid var(--color-quaternary);
+  background-color: var(--color-white);
+}
+
+.instance-header {
+  margin: 0;
+  border-bottom: 1px solid var(--color-quaternary);
+  display: flex;
+}
+
+.instance-header > .instance-topic {
+  border-right: 1px solid var(--color-quaternary);
+  padding: 5px;
+}
+
+.instance-header > h3 {
+  padding: 5px;
+  margin: 0;
+}
+
+.instance-body {
+  padding: 0px 10px;
+  margin: 0px;
+}
+
+.instance-wrapper {
+  border-right: 1px solid var(--color-quaternary);
+  border-left: 1px solid var(--color-quaternary);
+  padding: 10px 10px 20px 10px;
+}
+
+.instance-wrapper p {
+  margin: 0;
+}
+
+.instance-wrapper .instance-dates {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.divider {
+  position: relative;
+  top: -10px;
+  width: calc(100% + 20px);
+  margin-left: -10px;
+  display: block;
+  border-top: 1px solid var(--color-quaternary);
+}
